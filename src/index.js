@@ -16,10 +16,8 @@ strikeCheckedItems();
 clearComplete();
 
 // Render the list of the to-do items on the page
-const displayLists = () => {
-  const todos = getTodo().todo;
-  todos.forEach((item) => { renderAddedList(item); });
-};
+const displayLists = () => getTodo().todo.forEach((item) => renderAddedList(item));
+
 displayLists();
 const imageRefresh = () => {
   const element = document.querySelector('.refresh');
